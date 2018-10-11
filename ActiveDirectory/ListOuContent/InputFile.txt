@@ -1,0 +1,5 @@
+﻿#Input file used with GetOusWithinOU.ps1
+#Line items in this file are used as the -SearchBase value for AD queries.
+#Items should be the DN of a container/OU in which to search.
+
+DC=Family,DC=local
