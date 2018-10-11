@@ -1,0 +1,57 @@
+
+
+==============================================================================
+  Publish Scripts, v1.0 - July 2017
+    10/08/2018 14:09:29
+==============================================================================
+
+  Verified default target folder.
+  Located 11 scripts to process.
+
+    Processing D:\PS\ComputerManagement\Services\Exchange\ExServices\ExServices.ps1
+      Found 0 additional file(s) to include.
+
+    Processing D:\PS\PSModules\psBaseScript\PsBase.ps1
+      Found 1 additional file(s) to include.
+
+    Processing D:\PS\ComputerManagement\Services\AutoStart\StartAutoSvc.ps1
+      Found 0 additional file(s) to include.
+
+    Processing D:\PS\Files\PublishToWeb\PublishToWeb.ps1
+      Found 0 additional file(s) to include.
+
+    Processing D:\PS\Files\PublishZipToWeb\PublishZipToWeb.ps1
+      Found 1 additional file(s) to include.
+
+    Processing D:\PS\PSModules\psLibrary1\PsLibrary1.psm1
+      Found 1 additional file(s) to include.
+
+    Processing D:\PS\PSModules\psLibrary2\PsLibrary2.psm1
+      Found 0 additional file(s) to include.
+
+    Processing D:\PS\PSModules\psLibrary\PsLibrary.ps1
+      Found 0 additional file(s) to include.
+
+    Processing D:\PS\ComputerManagement\WindowsUpdate\UpdateStatus\CheckUpdates.ps1
+      Found 2 additional file(s) to include.
+
+    Processing D:\PS\ActiveDirectory\ListOuContent\ListOuContent.ps1
+      Found 1 additional file(s) to include.
+
+    Processing D:\PS\Files\ZipCreate\ZipCreate.ps1
+      Found 1 additional file(s) to include.
+==============================================================================
+  Summary
+            Total scripts: 11
+   Successfully processed: 11
+
+==============================================================================
+Processing complete...	10/8/2018 2:09:30 PM
+  Duration: 1.041 seconds
+  Returning value: 0.
+
+  Detailed information may be found in log file:
+	\\TREY-10-1\D$\PS\Files\PublishZipToWeb\Pub.txt
+
+
+

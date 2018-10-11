@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is an input/configuration file for script, FileDist.ps1.
+All the values listed are optional in this file.
+Leave all tags present, without content, if not used in this file.
+
+FileVersion - The version/format of this file.
+
+ServerList - A list of target servers for the file copy.
+
+SourceComputer - The computer holding the source files for distribution.
+SourceShare    - The share name used to access source files.
+SourcePath     - The path, below the SourceShare, to the source files folder.
+These three components are combined to form the source UNC path:
+	\\<SourceComputer>\<SourceShare>\<SourcePath>
+
+TargetShare - Share name expected on every computer in <ServerList>.
+TargetPath  - The path, below the TargetShare, to the target folder.
+These two components are combined with the computer names in the <ServerList>.
+
+DeleteContent - The presence of any value acts as a switch.  This triggers
+				  deletion of all files in the target folder prior to
+				  copy of new files.
+
+DeleteContentOnly - The presence of any value acts as a switch.  This triggers
+					  deletion of all files in the target folder.  No files
+					  are copied after the deletion.
+
+Create - The presence of any value acts as a switch.  This triggers creation
+		   of the target path/folder if it does not exist.  The target Share
+		   must exist prior to running script.
+
+Verbose - The presence of any value acts as a switch.  This enables the script's
+			verbose mode output.
+-->
+<Root>
+	<FileVersion>3.0</FileVersion>
+	<ServerList>C:\Scripts\ServerLists\PopulateCA.txt</ServerList>
+	<SourceComputer>OpMgr02</SourceComputer>
+	<SourceShare>PCA_Distribution</SourceShare>
+	<SourcePath></SourcePath>
+	<TargetShare>Scripts$</TargetShare>
+	<TargetPath>_Exchange\Mailbox\PopulateCustomAttributes</TargetPath>
+	<Recurse></Recurse>
+	<DeleteContent></DeleteContent>
+	<DeleteContentOnly></DeleteContentOnly>
+	<Create></Create>
+	<PreCopyCommand></PreCopyCommand>
+	<PostCopyCommand></PostCopyCommand>
+	<Verbose></Verbose>
+</Root>

@@ -1,0 +1,27 @@
+
+
+==============================================================================
+  Publish Scripts, v1.0 - July 2017
+    07/10/2018 11:01:02
+==============================================================================
+
+  Located 4 scripts to process.
+    Processing D:\PS\ComputerManagement\Services\GetServices.ps1
+    Processing D:\PS\PsBase.ps1
+    Processing D:\PS\ComputerManagement\Services\AutoStart\StartAutoSvc.ps1
+    Processing D:\PS\Files\PublishToWeb\PublishToWeb.ps1
+==============================================================================
+  Summary
+	        Total scripts: 4
+	Successfull processed: 4
+
+==============================================================================
+Processing complete...	7/10/2018 11:01:02 AM
+  Duration: 0.135 seconds
+  Returning value: 0.
+
+  Detailed information may be found in log file:
+	\\TREY-10-1\D$\PS\Files\PublishToWeb\Pub.txt
+
+
+

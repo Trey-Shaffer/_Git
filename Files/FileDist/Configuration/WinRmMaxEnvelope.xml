@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is an input/configuration file for script, FileDist.ps1.
+All the values listed are optional in this file.
+Leave all tags present, without content, if not used in this file.
+
+FileVersion - The version/format of this file.
+
+ServerList - A list of target servers for the file copy.
+
+SourceComputer - The computer holding the source files for distribution.
+SourceShare    - The share name used to access source files.
+SourcePath     - The path, below the SourceShare, to the source files folder.
+These three components are combined to form the source UNC path:
+	\\<SourceComputer>\<SourceShare>\<SourcePath>
+
+TargetShare - Share name expected on every computer in <ServerList>.
+TargetPath  - The path, below the TargetShare, to the target folder.
+These two components are combined with the computer names in the <ServerList>.
+
+DeleteContent - The presence of any value acts as a switch.  This triggers
+				  deletion of all files in the target folder prior to
+				  copy of new files.
+
+DeleteContentOnly - The presence of any value acts as a switch.  This triggers
+					  deletion of all files in the target folder.  No files
+					  are copied after the deletion.
+
+Recurse - In conjunction with one of the delete options, deletes all files
+			and subfolders of the target folder.
+Create - The presence of any value acts as a switch.  This triggers creation
+		   of the target path/folder if it does not exist.  The target Share
+		   must exist prior to running script.
+
+PreCopyCommand - A string representing code to execute on each target
+					computer, prior to copying files.  This is text representing
+					a valid ScriptBlock, when converted by the ScriptBlock
+					object's Create method.
+
+PostCopyCommand - A string representing code to execute on each target
+					computer, after copying files.  This is text representing
+					a valid ScriptBlock, when converted by the ScriptBlock
+					object's Create method.
+
+Pre/PostCopyCommand strings are only available from this, the XML configuration
+	file.  There is no command line or script default equivalent.
+If present, the placeholders *Computer*
+
+Verbose - The presence of any value acts as a switch.  This enables the script's
+			verbose mode output.
+-->
+<Root>
+	<FileVersion>3.1</FileVersion>
+	<ServerList>C:\Scripts\ServerLists\All.txt</ServerList>
+	<SourceComputer>OpMgr02</SourceComputer>
+	<SourceShare>MaxEnvelope$</SourceShare>
+	<SourcePath></SourcePath>
+	<TargetShare>Staging$</TargetShare>
+	<TargetPath>MaxEnvelope</TargetPath>
+	<DeleteContent>No</DeleteContent>
+	<DeleteContentOnly></DeleteContentOnly>
+	<Recurse>Yes</Recurse>
+	<PreCopyCommand></PreCopyCommand>
+	<PostCopyCommand></PostCopyCommand>
+	<Create>Yes</Create>
+	<Verbose>Yes</Verbose>
+</Root>
