@@ -1,0 +1,29 @@
+
+
+==============================================================================
+  Script Name 1.0, January 2017
+    10/12/2018 15:56:29
+==============================================================================
+
+  Argument values:
+     Simple: True
+     Random: False
+    Uniform: False
+     Unique: True
+  Processing computer, Exchange16-1...
+  Exchange16-1   Administrator  Shaffer1
+  Processing computer, SQL17-01...
+  SQL17-01   Administrator  Shaffer1
+  Processing computer, Web16-01...
+  Web16-01   Administrator  Shaffer1
+
+==============================================================================
+Processing complete...	10/12/2018 3:56:38 PM
+  Duration: 9.295 seconds
+  Returning value: 0.
+
+  Detailed information may be found in log file:
+	\\TREY-10-1\D$\PS\Security\ChangePassword\Log.txt
+
+
+
